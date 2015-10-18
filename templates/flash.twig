@@ -1,0 +1,8 @@
+{% if flash is not empty %}
+	{% for key, msg in flash %}
+		<div id="feedback" class="{{ key }}">
+			<h3>{{ key }}</h3>
+			<p>{{ msg }}</p>
+		</div>
+	{% endfor %}
+{% endif %}
