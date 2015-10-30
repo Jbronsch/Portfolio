@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html class="nojs">
+<html class="nojs" lang="en">
 <head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Jerold Bronsch | Front-End Developer</title>
 		<meta name="description" content="Jerold Bronsch is a Front-End Developer helping to provide both a minimalist and sleek experience for the new digital age.">
-		<meta name="keywords" content="Jerold Bronsch,Vancouver Web Developer, Vancouver Web Designer, Web Design, UX Design, UI Design">
-	    <meta name="viewport" content="width=device-width">
+		<meta name="keywords" content="Jerold Bronsch, Richmond, Richmond Web Developer, Richmond Web Design, Freelance, Freelance Web Developer, Freelance Website, Vancouver Web Developer, Vancouver Web Designer, Web Design, UX Design, UI Design">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/normalize.min.css">
-		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,400italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/slick.css">
+		<link rel="stylesheet" href="css/slick-theme.css">
 		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/responsive.min.css">
+		<link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 	<header>
 			<nav class="cssmenu">
 				<div>
 					<ul>
-						<li><a href="#about">Home</a></li>
+						<li><a href="#top">Home</a></li>
+						<li><a href="#about">About</a></li>
 						<li><a href="#projects">Projects</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
@@ -25,13 +28,13 @@
 			</nav>
 	</header>
 	{% include "flash.twig" %}
-	<div class="container home" id="about">
-		<div class="sectionHead meMain">
+	<div class="container home" id="top">
+		<div class="sectionHead">
 			<h1>Jerold Bronsch</h1>
 			<h2>Freelance Front-End Development and Design</h2>
 		</div>
 	</div>
-	<div class="container content">
+	<div class="container content" id="about">
 		<h2>I am a freelance web designer and front-end developer living and working in Richmond, B.C., Canada.</h2>
 		<div class="wrapper aboutMe">
 			<h3>I specialize in HTML5, CSS3, Javascript, and Jquery... but I am always learning more. Two other technologies I have started to learn are Ajax and Node.js, as well as dabbling in PHP. I am currently searching for small-business and personal opportunites for both work and self improvement. <br><p>I look forward to talking to you soon.</p> <br> :) </h3>
@@ -42,10 +45,26 @@
 			<h1>Projects</h1>
 		</div>
 	</div>
-	<div class="container content projectSection">
-		<a href="https://github.com/Jbronsch"><img src="img/githubmark.png" alt="My Github"></a>
-		<p>My Github<p>
-		<p>More coming soon!</p>
+	<div class="container content project-section">
+		<div class="project-carousel single-item wrapper">
+			<div class="carousel-content">
+				<a href="https://github.com/Jbronsch"><img src="img/githubmark.png" alt="My Github"></a>
+				<p class="title">My Github<p>
+				<p>Repositories of all my projects.</p>
+			</div>
+			<div class="carousel-content">
+				<a href="projects/jeremy/index.html"><img src="img/jeremyproject.jpg" alt="Jeremy's Photography Website"></a>
+				<p class="title">Jeremy Bronsch - Photographer</p>
+				<p>A simple photography website for my brother, Jeremy. Uses AJAX and the Flickr API to dynamically populate a masonry-driven grid.</p>
+				<p class="skills">Skills used: HTML5, CSS3, Javascript, Jquery, AJAX, Bootstrap.</p>
+			</div>
+<!-- 			<div class="carousel-content">
+				<a href="projects/smw/index.html"><img src="img/jeremyproject.jpg" alt="Jeremy's Photography Website"></a>
+				<p class="title">Merry World</p>
+				<p>A video game about my girlfriend's cat. Made primarily to learn more about javascript and jquery. WORK IN PROGRESS!</p>
+				<p class="skills">Skills used: HTML5, CSS3, Javascript, Jquery, Bootstrap.</p>
+			</div> -->
+		</div>
 	</div>
 	<div class="container contact" id="contact">
 		<div class="sectionHead">
@@ -78,8 +97,16 @@
 	        	</div>
 			</form>
 		</div>
+		<div class="social-media">
+			<a href="https://www.facebook.com/elkcrossing"><img src="img/facebook.png" class="social-media"></a>
+			<a href="https://www.twitter.com/jbronsch"><img src="img/twitter.png" class="social-media"></a>
+			<a href="https://www.github.com/jbronsch"><img src="img/github.png" class="social-media"></a>
+			<p>Email: Jbronsch@gmail.com</p>
+			<p>Phone: 604-836-1989</p>
+		</div>
 	</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

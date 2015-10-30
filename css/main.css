@@ -66,7 +66,7 @@ body {
   display: inline-block;
   padding: 0;
   margin: 0;
-  width: 33%;
+  width: 25%;
 }
 .cssmenu.align-right ul li {
   float: right;
@@ -262,7 +262,7 @@ img {
   font-size: .75em;
 }
 
-.projectSection {
+.project-section {
   background-color: #009B29;
 }
 
@@ -273,14 +273,9 @@ img {
 
 .sectionHead {
   color: white;
-  padding: 10% 0 20%;
-  display: block;
   text-align: center;
-}
-
-.sectionHead.meMain {
   font-size: 1.5em;
-  padding: 15% 10%;
+  padding: 150px 10%;
 }
 
 .sectionHead h1 {
@@ -302,6 +297,23 @@ img {
 
 .formSection {
   padding-top: 10px;
+}
+
+.carousel-content {
+  text-align: center;;
+}
+
+.carousel-content img {
+  width: 40%;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.skills {
+  font-weight: 400;
+  font-style: bold;
 }
 
 .form {
@@ -349,15 +361,8 @@ a {
     color: #FFF;
 }
 
-#favicons {
-  text-align: center;
-  margin: 5%;
-}
-
-.social-icon {
-  margin: 5px;
-  height: 50px;
-  width: 50px;
+.social-media {
+  padding: 0 20px 80px;
 }
 
 .enlarge {

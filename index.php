@@ -18,7 +18,7 @@ $view->parserExtensions = array(
 );
 
 $app->get('/', function() use($app){
-	$app->render('main.min.twig');
+	$app->render('main.twig');
 })->name("home");
 
 $app->post('/', function() use($app){
