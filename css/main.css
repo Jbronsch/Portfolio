@@ -194,6 +194,10 @@ FEEDBACK
   opacity: .7;
 }
 
+#top {
+  top: 30%;
+}
+
 /* BODY STYLING */
 .home, .projects, .contact {
   background: linear-gradient(
@@ -272,10 +276,13 @@ img {
 }
 
 .sectionHead {
+  position: relative;
   color: white;
   text-align: center;
   font-size: 1.5em;
-  padding: 150px 10%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .sectionHead h1 {
