@@ -9,7 +9,7 @@ var nav = $(".cssmenu");
     navScroll = "cssmenuScroll";
 
 $(window).scroll(function() {
-  if( $(this).scrollTop() > 450 ) {
+  if( $(this).scrollTop() > 550 ) {
     nav.addClass(navScroll);
   } else {
     nav.removeClass(navScroll);

@@ -8,6 +8,7 @@
 }
 
 body {
+  color: #fff;
   width: 100%;
   height: 100%;
   overflow-x: hidden;
@@ -33,14 +34,14 @@ body {
 
 .cssmenu {
   width: 100%;
-  top: 60%;
+  top: 70%;
   position: absolute;
   text-align: center; 
   z-index: 3;
 }
 
 .cssmenuScroll{
-  background: #4774A9;
+  background: #222;
   position: fixed;
   top: 0;
   width: 100%;
@@ -92,7 +93,7 @@ body {
 }
 
 .cssmenuScroll ul li a {
-  color: #111;
+  color: #fff;
   text-decoration: none;
   display: block;
   padding: 15px 25px;
@@ -123,7 +124,7 @@ body {
   top: 19px;
   height: 6px;
   width: 6px;
-  background: #111 ;
+  background: #fff ;
   opacity: .5;
 
 }
@@ -167,7 +168,6 @@ FEEDBACK
 #feedback {
   text-align: center;
   padding: 10px 0 10px;
-  color: #fff;
   height: 80px;
   overflow: hidden;
   position: relative;
@@ -195,15 +195,16 @@ FEEDBACK
 }
 
 #top {
-  top: 30%;
+  top: 40%;
 }
 
 /* BODY STYLING */
-.home, .projects, .contact {
+.home {
   background: linear-gradient(
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)
-    ),url(../img/background.jpg) no-repeat center center fixed; 
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25)
+    ),url(../img/background0.jpg) no-repeat center center fixed; 
+  background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -211,22 +212,9 @@ FEEDBACK
   height: 100vh;
 }
 
-.projects {
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)
-    ),url(../img/background2.jpg) no-repeat center center fixed; 
-  background-size: cover;
-  height: 50vh;
-}
-
-.contact {
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)
-    ),url(../img/background3.jpg) no-repeat center center fixed; 
-  background-size: cover;
-  height: 50vh;
+.section-header {
+  background-color: #222;
+  height: 25vh;
 }
 
 .projectPill {
@@ -253,31 +241,43 @@ img {
 
 .content {
   text-align: center;
-  background-color: #7DA2CF;
-  color: #111;
   padding: 5% 0;
   display: block;
   width: 100%;
-  border-bottom: 1px solid #111;  
   font-size: 1.5em;
 }
 
-.aboutMe {
+.about-me {
   font-size: .75em;
 }
 
-.project-section {
-  background-color: #009B29;
+.about-section {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),url(../img/background1.jpg) no-repeat center center fixed; 
+  background-size: cover;
 }
 
-.contactSection {
-  background-color: #FF9933;
+.project-section {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),url(../img/background2.jpg) no-repeat center center fixed; 
+  background-size: cover;
+}
+
+.contact-section {
+   background: linear-gradient(
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),url(../img/background3.jpg) no-repeat center center fixed; 
+  background-size: cover;
   padding: 0;
 }
 
-.sectionHead {
+.section-text {
   position: relative;
-  color: white;
   text-align: center;
   font-size: 1.5em;
   left: 50%;
@@ -285,12 +285,12 @@ img {
   transform: translate(-50%, -50%);
 }
 
-.sectionHead h1 {
+.section-text h1 {
   margin: 0px;
   font-size: 3em;
 }
 
-.sectionHead h2 {
+.section-text h2 {
   font-size: 2em;
 }
 
@@ -307,7 +307,7 @@ img {
 }
 
 .carousel-content {
-  text-align: center;;
+  text-align: center;
 }
 
 .carousel-content img {
@@ -324,8 +324,8 @@ img {
 }
 
 .form {
-  color: #fff;
   background-color: rgba(0,0,0,.25);
+  color: #fff;
   -moz-border-radius: 5px;  /*or whatever radius*/
   -webkit-border-radius: 5px;  /*or whatever radius*/
   border: 1px solid #111;
@@ -369,7 +369,8 @@ a {
 }
 
 .social-media {
-  padding: 0 20px 80px;
+  text-align: center;
+  padding: 20px 20px;
 }
 
 .enlarge {

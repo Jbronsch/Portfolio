@@ -18,7 +18,7 @@
 			<nav class="cssmenu">
 				<div>
 					<ul>
-						<li><a href="#top">Home</a></li>
+						<li><a href="#home">Home</a></li>
 						<li><a href="#about">About</a></li>
 						<li><a href="#projects">Projects</a></li>
 						<li><a href="#contact">Contact</a></li>
@@ -27,20 +27,25 @@
 			</nav>
 	</header>
 	{% include "flash.twig" %}
-	<div class="container home">
-		<div class="sectionHead" id="top">
+	<div class="container home" id="home">
+		<div class="section-text" id="top">
 			<h1>Jerold Bronsch</h1>
 			<h2>Freelance Front-End Development and Design</h2>
 		</div>
 	</div>
-	<div class="container content" id="about">
+	<div class="container section-header" id="about">
+		<div class="section-text">
+			<h1>About</h1>
+		</div>
+	</div>
+	<div class="container content about-section">
 		<h2>I am a freelance web designer and front-end developer living and working in Richmond, B.C., Canada.</h2>
-		<div class="wrapper aboutMe">
+		<div class="wrapper about-me">
 			<h3>I specialize in HTML5, CSS3, Javascript, and Jquery... but I am always learning more. Two other technologies I have started to learn are Ajax and Node.js, as well as dabbling in PHP. I am currently searching for small-business and personal opportunites for both work and self improvement. <br><p>I look forward to talking to you soon.</p> <br> :) </h3>
 		</div>
 	</div>
-	<div class="container projects" id="projects">
-		<div class="sectionHead">
+	<div class="container section-header" id="projects">
+		<div class="section-text">
 			<h1>Projects</h1>
 		</div>
 	</div>
@@ -65,12 +70,12 @@
 			</div> -->
 		</div>
 	</div>
-	<div class="container contact" id="contact">
-		<div class="sectionHead">
+	<div class="container section-header" id="contact">
+		<div class="section-text">
 			<h1>Contact Me!</h1>
 		</div>
 	</div>
-	<div class="container content contactSection">
+	<div class="container content contact-section">
 		<div id="contactForm">
 			<form class="contactForm" role="form" method="post" action="">
 	        	<div class="formSection">
@@ -86,7 +91,7 @@
 	                <input type="text" class="form" name="subject" placeholder="Subject">
 	            </div>
 	            <div class="formSection">
-	                <label for="form-message" class= "control-label">Message</label><br>
+	                <label for="form-message" class="control-label">Message</label><br>
 	                    <textarea rows="5" cols="35" class="form" name="message" placeholder="Message"></textarea>
 	            </div>
 	            <div class="formSection">
@@ -96,12 +101,14 @@
 	        	</div>
 			</form>
 		</div>
+	</div>
+	<div class="container section-header">
 		<div class="social-media">
+			<p>Email: Jbronsch@gmail.com</p>
+			<p>Phone: 604-836-1989</p>
 			<a href="https://www.facebook.com/elkcrossing"><img src="img/facebook.png" class="social-media"></a>
 			<a href="https://www.twitter.com/elk_crossing"><img src="img/twitter.png" class="social-media"></a>
 			<a href="https://www.github.com/jbronsch"><img src="img/github.png" class="social-media"></a>
-			<p>Email: Jbronsch@gmail.com</p>
-			<p>Phone: 604-836-1989</p>
 		</div>
 	</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
